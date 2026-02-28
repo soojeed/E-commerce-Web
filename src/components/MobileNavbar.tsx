@@ -4,7 +4,7 @@ import { IoIosMenu } from "react-icons/io"
 import CartCountBadge from "./CartCountBadge"
 
 
-const MobileNavbar = () => {
+const MobileNavbar = ({setShowCart}: any) => {
   return (
     <div className="sticky top-0  bg-white z-10">
         <div className="container p-8 lg:hidden">
@@ -19,7 +19,7 @@ const MobileNavbar = () => {
 
                 <div className="flex gab-4 text-[30px] gap-7">
                     <AiOutlineUser />
-                    <div className="relative cunsor-pointer ">
+                    <div className="relative cunsor-pointer " onClick={()=> setShowCart(true)}>
                         <AiOutlineShoppingCart/>
                         <CartCountBadge size="w-[20px] h-[20px]"/>
                     </div>
