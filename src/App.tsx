@@ -1,6 +1,5 @@
 import { useState } from "react"
 import Banner from "./components/Banner"
-import BlogCard from "./components/BlogCard"
 import BlogSection from "./components/BlogSection"
 import Category from "./components/Category"
 import FeatureSectionBreakfast from "./components/FeatureSectionBreakfast"
